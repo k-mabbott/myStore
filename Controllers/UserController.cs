@@ -17,7 +17,7 @@ public class UserController : Controller
         DB = context;
     }
     // -----------------------------INDEX PAGE
-    [HttpGet("")]
+    [HttpGet("loginReg")]
     public IActionResult Index()
     {
         return View();

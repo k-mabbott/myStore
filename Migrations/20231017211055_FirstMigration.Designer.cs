@@ -8,7 +8,7 @@ using myStore.Models;
 
 #nullable disable
 
-namespace LoginRegistration.Migrations
+namespace myStore.Migrations
 {
     [DbContext(typeof(MyContext))]
     [Migration("20231017211055_FirstMigration")]

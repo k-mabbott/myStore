@@ -20,9 +20,9 @@ public class HomeController : Controller
     //     return View();
     // }
 
-    [SessionCheck]
-    [HttpGet("success")]
-    public IActionResult Success()
+    // [SessionCheck]
+    [HttpGet("")]
+    public IActionResult Index()
     {
         return View();
     }

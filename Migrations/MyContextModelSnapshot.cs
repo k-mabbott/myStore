@@ -7,7 +7,7 @@ using myStore.Models;
 
 #nullable disable
 
-namespace LoginRegistration.Migrations
+namespace myStore.Migrations
 {
     [DbContext(typeof(MyContext))]
     partial class MyContextModelSnapshot : ModelSnapshot
