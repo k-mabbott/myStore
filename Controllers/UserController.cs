@@ -1,9 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using LoginRegistration.Models;
+using myStore.Models;
 
-namespace LoginRegistration.Controllers;
+namespace myStore.Controllers;
 
 public class UserController : Controller
 {
@@ -62,6 +62,7 @@ public class UserController : Controller
             ModelState.AddModelError("LoginEmail", "Invalid Credentials");
             return View("Index");
         }
+        
         HttpContext.Session.SetInt32("UserId", userInDb.UserId);
         return RedirectToAction("Success", "Home");
     }

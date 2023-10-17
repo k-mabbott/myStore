@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using LoginRegistration.Models;
+using myStore.Models;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 
-namespace LoginRegistration.Controllers;
+namespace myStore.Controllers;
 
 public class HomeController : Controller
 {

@@ -1,6 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
-using LoginRegistration.Models;
+using myStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

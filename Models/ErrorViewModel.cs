@@ -1,4 +1,4 @@
-namespace LoginRegistration.Models;
+namespace myStore.Models;
 
 public class ErrorViewModel
 {
