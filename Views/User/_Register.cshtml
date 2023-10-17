@@ -1,0 +1,35 @@
+
+@model User
+
+<div class="text-center p-3">
+    <h1 class="display-4">Register</h1>
+    <hr>
+    <form asp-action="Create" asp-controller="User" method="post" >
+    <div class="mb-3">
+        <label asp-for="FirstName"></label>
+        <span style="font-weight: 600;" asp-validation-for="FirstName" class="text-danger d-block " ></span>
+        <input asp-for="FirstName" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="LastName"></label>
+        <span style="font-weight: 600;" asp-validation-for="LastName" class="text-danger d-block " ></span>
+        <input asp-for="LastName" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email"></label>
+        <span style="font-weight: 600;" asp-validation-for="Email" class="text-danger d-block " ></span>
+        <input asp-for="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password"></label>
+        <span style="font-weight: 600;" asp-validation-for="Password" class="text-danger d-block " ></span>
+        <input asp-for="Password" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="ConfirmPassword"></label>
+        <span style="font-weight: 600;" asp-validation-for="ConfirmPassword" class="text-danger d-block " ></span>
+        <input asp-for="ConfirmPassword" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-outline-success" >Register</button>
+</form>
+</div>

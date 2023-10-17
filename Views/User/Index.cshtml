@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Login / Registration";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mt-5">Welcome</h1>
+    <hr class="mb-5 w-50 mx-auto">
+    <div class="d-flex justify-content-between container" >
+        <section class="card shadow p-1 w-100 m-3" >
+            @await Html.PartialAsync("_Register")
+        </section>
+        <section class="card shadow p-1 w-100 m-3" >
+            @await Html.PartialAsync("_Login")
+        </section>
+    </div>
+</div>
